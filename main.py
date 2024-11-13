@@ -10,7 +10,7 @@ class MusicalInstruments():
         print ("Instrument:", self.name, "brand:", self.brand, "Color:", self.color)
 
     def sound(self):
-        print ("*sound111*")
+        print ("*sound1112222333444443*")
 
 #класс гитара
 class Guitar(MusicalInstruments):
