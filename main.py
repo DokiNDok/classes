@@ -15,8 +15,8 @@ class MusicalInstruments():
 #класс гитара
 class Guitar(MusicalInstruments):
 
-    def __init__(self, name, brand, color, model):
-        super().__init__(name, brand, color)
+    def __init__(self, brand, color, model):
+        super().__init__("guitar", brand, color)
         self.model = model
         
 
@@ -29,8 +29,8 @@ class Guitar(MusicalInstruments):
 #класс фортепиано
 class Piano(MusicalInstruments):
 
-    def __init__(self, name, brand, color, cost):
-        super().__init__(name, brand, color)
+    def __init__(self, brand, color, cost):
+        super().__init__("piano", brand, color)
         self.cost = cost
 
     def info(self):
@@ -41,8 +41,8 @@ class Piano(MusicalInstruments):
 
 #класс скрипки
 class Violin(MusicalInstruments):
-    def __init__(self, name, brand, color, cost):
-        super().__init__(name, brand, color)
+    def __init__(self, brand, color, cost):
+        super().__init__("violin", brand, color)
         self.cost = cost
 
     def info(self):
@@ -52,9 +52,9 @@ class Violin(MusicalInstruments):
         print ("*violin sound*")
 
 #использование классов
-guitar = Guitar("guitar", "Fender", "red", "mustang")
-piano = Piano("piano", "Yamaha", "black", 150000)
-violin = Violin("violin", "Stradivarius", "-", 60000)
+guitar = Guitar("Fender", "red", "mustang")
+piano = Piano("Yamaha", "black", 150000)
+violin = Violin("Stradivarius", "-", 60000)
 
 guitar.info()
 guitar.sound()
